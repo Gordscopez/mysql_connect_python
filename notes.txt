@@ -1,0 +1,18 @@
+user 	-> user name
+passowrd -> user passowrd
+host 	-> from where we are getting the data (I.p Address)
+port  	-> port number 
+database  -> database name
+
+
+pip install mysql-connector-python
+import mysql-connector
+auth_plugin = 'mysql_native_passowrd'
+
+
+   -> status
+   -> select host,user,plugin from mysql.user
+   -> select substring_index(user(), '@', -1) as ip, @hostname as hostname, @port as port, database() as current_database;
+   -> show variables where variable_name = 'port';
+
+
